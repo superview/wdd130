@@ -14,13 +14,13 @@ h1 {
 }
 
 img {
-    width: 150px;
+    width: 250px;
     height: auto;
-    border: 1px solid black;
+    border: 12px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 10px;
+    padding: 20px;
 }
