@@ -1,0 +1,29 @@
+.callout {
+    max-width: 90%;
+	
+}
+
+.callout img {
+    position: relative;
+    margin: auto;
+    border: 1;
+    padding: auto;
+    background-color: #EEEEEE;
+    width: 3;
+    height: fit-content;
+	
+}
+
+blockquote {
+    margin: auto;
+	
+}
+
+cite {
+    display: inline;
+    border-top: 12px;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 16pt;
+	
+}
