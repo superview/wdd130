@@ -3,13 +3,13 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 3rem;
-    background-color: #99f;
-    color: #321;
+    background-color: #cef;
+    color: #221;
     text-align: center;
 }
 
 aside img {
-    width: 90px;
+    width: 200px;
     height: auto;
 }
 
