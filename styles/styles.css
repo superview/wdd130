@@ -1,11 +1,18 @@
+:root {
+    --padding: 1rem;
+    --color: rgb(21, 21, 141);
+    --font-size: 16px;
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 3rem;
+    padding: var(--padding);
     background-color: #cef;
-    color: #221;
+    color: var(--color);
     text-align: center;
+    font-size: var(--font-size);
 }
 
 aside img {
@@ -15,17 +22,17 @@ aside img {
 
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--padding);
 }
 
 h1 {
-    color: darkblue
+    color: var(--color)
 }
 
 main {
