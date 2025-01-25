@@ -20,6 +20,12 @@ aside img {
     height: auto;
 }
 
+.box {
+    background-color: 333;
+    padding: 2rem;
+    color: bbb;
+}
+
 nav {
     background-color: darkblue;
     padding: var(--padding);
