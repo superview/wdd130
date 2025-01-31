@@ -1,0 +1,78 @@
+:root {
+  font-family: sans-serif;
+  /* font-family: serif; */
+  color: #63458a;
+  background-color: #e4b7e5;
+  text-decoration: none;
+  --padding: 1rem;
+  --primary-color: #e4b7e5;
+  --secondary-color: #b288c0;
+  --accent1-color: #7e5a9b;
+  --accent2-color: #9a48d0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cactus Classical Serif", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div {
+  border-color: --secondary-color;
+  border-width: 3px;
+  background-color: aqua;
+  width: 400px;
+  padding: var(--padding);
+}
+
+p {
+  font-family: "Delius", serif;
+}
+
+.hero {
+  width: 400px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.hero img {
+  float: right;
+  height: 30px;
+}
+
+.img_medium {
+  height: 60px;
+}
+
+.delius-regular {
+  font-family: "Delius", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tinos-bold-italic {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: italic;
+}
