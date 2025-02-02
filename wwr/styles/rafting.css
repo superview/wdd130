@@ -103,22 +103,22 @@ p {
 }
 
 .colums-4 {
-  grid-column: 1/6;
+  grid-column: 1/5;
 }
 
 .history {
   display: grid;
   flex-direction: row;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
   vertical-align: middle;
+  align-items: center;
 }
 
 .adventure {
   display: grid;
   flex-wrap: wrap;
   flex-direction: row;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
 }
 
