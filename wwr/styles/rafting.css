@@ -36,7 +36,7 @@ div {
   border-width: 3px;
   background-color: var(--secondary-color);
   max-width: var(--max-overall-width);
-  padding: var(--padding - 1);
+  padding: 0.5);
 }
 
 .navigation {
@@ -109,30 +109,22 @@ p {
 .history {
   display: grid;
   flex-direction: row;
-  grid-template-columns: 120px repeat(3 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  vertical-align: middle;
 }
 
 .adventure {
   display: grid;
   flex-wrap: wrap;
   flex-direction: row;
-  grid-template-columns: 100px repeat(5 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
 }
 
 .adventure img {
   width: 10;
   padding: 0;
-  /* background-color: var(--accent2-color);
-  border-radius: 5px;
-  border-color: aqua;
-  border-style: solid;
-  border-width: 3px; */
-}
-
-.history img {
-  /* max-width: 100%; */
 }
 
 footer {
