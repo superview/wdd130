@@ -1,14 +1,16 @@
 :root {
   font-family: sans-serif;
   /* font-family: serif; */
-  color: #63458a;
-  background-color: #e4b7e5;
-  text-decoration: none;
   --padding: 1rem;
   --primary-color: #e4b7e5;
   --secondary-color: #b288c0;
   --accent1-color: #7e5a9b;
   --accent2-color: #9a48d0;
+  --max-overall-width: 1200px;
+}
+
+* {
+  color: #63458a;
 }
 
 h1,
@@ -20,12 +22,61 @@ h4 {
   font-style: normal;
 }
 
+header {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 120px 1fr;
+  border-bottom: 2px solid #aaa;
+  max-width: var(--max-overall-width);
+  background-color: var(--secondary-color);
+}
+
 div {
-  border-color: var(--secondary-color);
+  border-color: var(--accent-color);
   border-width: 3px;
-  background-color: aqua;
-  width: 400px;
-  padding: var(--padding);
+  background-color: var(--secondary-color);
+  max-width: var(--max-overall-width);
+  padding: var(--padding - 1);
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  border-color: #63458a;
+  background-color: var(--secondary-color);
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.navigation li {
+  flex: 1 1 auto;
+  text-decoration: none;;
+}
+
+header img {
+  background-color: var(--secondary-color);
+}
+
+.navigation a {
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 0.85em;
+  border-color: #937fae;
+
+}
+
+.navigation a:hover {
+  color: rgb(179, 175, 175);
+  font-weight: 500;
+  text-decoration: underline;
+  background-color: darkviolet;
 }
 
 p {
@@ -33,18 +84,66 @@ p {
 }
 
 .hero {
-  width: 400px;
+  display: block;
   background-color: antiquewhite;
   text-align: center;
 }
 
 .hero img {
-  float: right;
-  height: 30px;
+  max-width: 100px;
 }
 
 .img_medium {
-  height: 60px;
+  height: 90px;
+  float: right;
+}
+
+.colums-3 {
+  grid-column: 1/4;
+}
+
+.colums-4 {
+  grid-column: 1/6;
+}
+
+.history {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 120px repeat(3 1fr);
+  align-items: center;
+}
+
+.adventure {
+  display: grid;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-template-columns: 100px repeat(5 1fr);
+  align-items: center;
+}
+
+.adventure img {
+  width: 10;
+  padding: 0;
+  /* background-color: var(--accent2-color);
+  border-radius: 5px;
+  border-color: aqua;
+  border-style: solid;
+  border-width: 3px; */
+}
+
+.history img {
+  /* max-width: 100%; */
+}
+
+footer {
+  border: 1 solid #444;
+  font-size: small;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .delius-regular {
