@@ -1,6 +1,6 @@
 :root {
   font-family: sans-serif;
-  --padding: 1rem;
+  --padding: 0;
   --primary-color: #e4b7e5;
   --secondary-color: #b288c0;
   --accent1-color: #baa2cd;
@@ -34,9 +34,9 @@ h4 {
 header {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 90px 1fr;
   border-bottom: 2px solid #aaa;
-  padding: 20px;
+  padding: 2px;
   max-width: var(--max-overall-width);
   background-color: var(--secondary-color);
 }
@@ -65,11 +65,8 @@ div {
 
 .navigation li {
   flex: 1 1 auto;
-  text-decoration: none;;
-}
-
-header img {
-  background-color: var(--secondary-color);
+  text-decoration: none;
+  ;
 }
 
 .navigation a {
@@ -119,8 +116,6 @@ p {
   flex-direction: row;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  /* vertical-align: middle;
-  justify-content: center; */
 }
 
 .history img {
@@ -140,11 +135,22 @@ p {
   width: 100px;
   height: auto;
   padding: 0px;
-  background: var(--accent1-color);
+  display: block;
+}
+
+.adventure figure {
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin: 0.5rem;
+  padding: 0;
 }
 
 footer {
-  border: 1px  solid #444;
+  border: 1px solid #444;
   font-size: small;
 }
 
