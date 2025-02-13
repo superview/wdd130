@@ -149,23 +149,15 @@ p {
   padding: 0;
 }
 
-input[type=text], select, textarea {
-  width: 80%;
-  max-width: 500px;
-}
-.contact form {
+.contact section {
   display: flex;
-  background-color: antiquewhite;
-  flex-flow: column;
-  max-width: 50%;
-  align-items: flex-start;
-  padding: 2rem;
+  flex-flow: column; /* was column */
 }
 
 .contact figure {
   /* border: thin #c0c0c0 solid; */
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   padding: 15px;
   max-width: 120px;
   margin: auto;
@@ -190,7 +182,7 @@ input[type=text], select, textarea {
 }
 
 footer {
-  /* border: 1px solid #444; */
+  border: 1px solid #444;
   font-size: small;
 }
 
@@ -201,30 +193,23 @@ footer div {
   justify-content: center;
 }
 
-/* footer img {
-  gap: 12px;
-  max-width:  15px;
-  max-height: 15px;
-} */
-
 .row_me img {
   display: flex;
-  border: none;
   flex-direction: row;
   align-items: center; 
   gap: 12px;
-  max-width: 15px;
-  max-height: 15px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
-/* .row_me div {
+.row_me div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 12px;
   width:max-content;
   padding: auto;
-} */
+} 
 
 .delius-regular {
   font-family: "Delius", serif;

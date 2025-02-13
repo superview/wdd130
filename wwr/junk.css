@@ -1,0 +1,347 @@
+ article {
+     --fontSize10: 0.625rem;
+     --fontSize11: calc(0.6875rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize12: 0.75rem;
+     --fontSize13: calc(0.8125rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize14: calc(0.875rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize16: calc(1rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize18: calc(1.125rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize20: calc(1.25rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize22: 1.375rem;
+     --fontSize26: 1.625rem;
+     --fontSize28: calc(1.75rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize30: 1.875rem;
+     --fontSize32: calc(2rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize36: 2.25rem;
+     --fontSize42: calc(2.625rem * var(--increment, 1) * var(--fontSizeMultiplier, 1));
+     --fontSize52: 3.25rem;
+     --fontWeightLight: 300;
+     --fontWeightNormal: 400;
+     --fontWeightSemiBold: 600;
+     --fontWeightBold: 700;
+     --spacing4: 0.25rem;
+     --spacing16: 1rem;
+     --spacing32: 2rem;
+     --spacing64: 4rem;
+     --serif: "Ensign:Serif", McKay, "McKay ldsLat", Palatino, "Palatino Linotype", Palatino-Roman, serif;
+     --sans: "Ensign:Sans", Gotham, "Gotham A", "Gotham SSm A", "Gotham SSm B", Arial, sans-serif;
+     --lineHeightTight: 1.2;
+     --lineHeightNormal: 1.4;
+     --lineHeightLoose: 1.6
+ }
+
+ body {
+     font-size: var(--fontSize18);
+     opacity: 1 !important
+ }
+
+ platform-header .header-placeholder {
+     min-height: 74px
+ }
+
+ .video {
+     margin: var(--spacing16) 0 var(--spacing24);
+     aspect-ratio: 16 / 9
+ }
+
+ [class*="audioPlayer"] {
+     align-self: end;
+     inset-block-end: 0;
+     position: fixed;
+     width: 100%
+ }
+
+ article[data-aid-version] div.body {
+     padding: var(--spacing64) 0
+ }
+
+ @layer preIPS {
+     .classic-scripture header {
+         padding-bottom: var(--spacing16)
+     }
+
+     .classic-scripture .body-block .verse {
+         text-indent: 0;
+         padding-bottom: var(--spacing16)
+     }
+
+     .classic-scripture h1 {
+         font-family: var(--serif);
+         font-weight: 400;
+         font-style: normal;
+         text-transform: uppercase;
+         letter-spacing: 0.1em;
+         font-size: var(--fontSize18);
+         text-align: center;
+         line-height: var(--lineHeightTight);
+         padding: 0 var(--spacing24)
+     }
+
+     .classic-scripture h1>.dominant {
+         font-size: var(--fontSize32);
+         line-height: var(--lineHeightTight);
+         display: block;
+         padding-top: var(--spacing4)
+     }
+
+     .classic-scripture h1:only-of-type>.dominant,
+     .classic-scripture h1:nth-of-type(2)>.dominant {
+         padding-bottom: var(--spacing16)
+     }
+
+     .classic-scripture h1+.title-number {
+         padding-top: var(--spacing16)
+     }
+
+     .classic-scripture .title-number {
+         font-size: var(--fontSize20);
+         padding-bottom: var(--spacing8);
+         padding-top: 0;
+         text-align: center;
+         letter-spacing: 0.1em;
+         text-transform: uppercase
+     }
+
+     .classic-scripture .study-summary {
+         font-family: var(--serif);
+         font-style: italic;
+         padding-bottom: 0;
+         text-indent: 0;
+         line-height: var(--lineHeightLoose)
+     }
+
+     .classic-scripture .intro {
+         padding: var(--spacing24) 0;
+         line-height: var(--lineHeightLoose)
+     }
+
+     .classic-scripture .body header .subtitle {
+         font-size: var(--fontSize16);
+         letter-spacing: 0.1em;
+         text-align: center;
+         text-transform: uppercase;
+         line-height: var(--lineHeight);
+         padding-bottom: 0
+     }
+
+     .classic-scripture .body {
+         line-height: var(--lineHeightLoose)
+     }
+
+     .classic-scripture sup.marker {
+         font-style: italic;
+         padding-inline-start: 0
+     }
+
+     .classic-scripture sup {
+         font-size: var(--fontSize13);
+         vertical-align: super;
+         line-height: 0;
+         padding-inline-start: calc(var(--spacing4) / 2)
+     }
+
+     .classic-scripture sup[data-value]::before {
+         display: inline;
+         content: attr(data-value)
+     }
+
+     .classic-scripture .clarity-word {
+         font-style: italic
+     }
+
+     .classic-scripture .verse-number {
+         font-size: var(--fontSize16);
+         font-weight: 700
+     }
+ }
+
+ @layer preIPS {
+     .global-template-mobile_lesson h1 {
+         font-size: 42px;
+         font-weight: var(--fontWeightBold);
+         font-family: var(--sans)
+     }
+
+     [data-content-type="general-conference-talk"] h1 {
+         font-family: var(--serif);
+         font-weight: var(--fontWeightNormal)
+     }
+
+     .global-template-mobile_lesson h2 {
+         font-size: var(--fontSize32);
+         font-weight: var(--fontWeightLight)
+     }
+
+     .global-template-mobile_lesson h3 {
+         font-size: var(--fontSize20);
+         font-weight: var(--fontWeightBold)
+     }
+
+     .global-template-mobile_lesson p {
+         margin-bottom: var(--spacing16);
+         line-height: var(--lineHeightLoose)
+     }
+
+     .global-template-mobile_lesson ul {
+         padding-inline-start: var(--spacing16)
+     }
+
+     .global-template-mobile_lesson section>header {
+         margin-top: var(--spacing64);
+         margin-bottom: var(--spacing16)
+     }
+
+     .global-template-mobile_lesson .body>header {
+         margin-bottom: var(--spacing64);
+         font-family: var(--sans)
+     }
+
+     .global-template-mobile_lesson .byline {
+         margin: var(--spacing32) 0
+     }
+
+     .global-template-mobile_lesson :is(.author-name, .author-role) {
+         line-height: var(--lineHeightTight);
+         font-weight: var(--fontWeightSemiBold)
+     }
+
+     .global-template-mobile_lesson .author-name {
+         margin-bottom: var(--spacing4)
+     }
+
+     .global-template-mobile_lesson .author-role {
+         font-style: italic
+     }
+
+     .global-template-mobile_lesson .ActionBar {
+         margin: 0 0 var(--spacing16)
+     }
+
+     .global-template-mobile_lesson .kicker {
+         font-weight: var(--fontWeightLight);
+         line-height: var(--lineHeightLoose);
+         margin-bottom: var(--spacing32)
+     }
+
+     .global-template-mobile_lesson .body-block {
+         font-family: var(--serif)
+     }
+
+     .global-template-mobile_lesson .image {
+         padding: var(--spacing16) 0 var(--spacing32)
+     }
+
+     .global-template-mobile_lesson img[data-assetid] {
+         width: 100%
+     }
+
+     .global-template-mobile_lesson .title-number {
+         font-size: var(--fontSize14);
+         line-height: var(--lineHeightTight);
+         margin-bottom: 0
+     }
+
+     .global-template-mobile_lesson p.reference,
+     .global-template-mobile_lesson p.short-reference {
+         display: none
+     }
+
+     .global-template-mobile_lesson :is(.image, .map, .diagram) {
+         padding: var(--spacing16) 0 var(--spacing32)
+     }
+
+     .global-template-mobile_lesson :is(.image, .map, .diagram) img {
+         padding: 0;
+         margin-bottom: var(--spacing8)
+     }
+
+     .global-template-mobile_lesson :is(.collection-title, .scripture-title, .section-title, .series-title, .title-number, .song-number),
+     .global-template-mobile_lesson strong {
+         font-weight: var(--fontWeightBold)
+     }
+
+     .global-template-mobile_lesson .body-block>section>header+section>header {
+         margin-top: var(--spacing16)
+     }
+
+     .global-template-mobile_lesson :is(.collection-title, .scripture-title, .section-title, .series-title, .title-number, .song-number) {
+         font-size: var(--fontSize14);
+         line-height: var(--lineHeightTight);
+         margin-bottom: 0;
+         font-family: var(--sans)
+     }
+
+     .global-template-mobile_lesson :is(figure .credit, aside .credit, .image .citation-info) p {
+         font-size: var(--fontSize11) !important;
+         line-height: var(--lineHeight) !important
+     }
+
+     .global-template-mobile_lesson :is(figcaption p, figure .credit p, aside .credit p) {
+         margin-bottom: 0
+     }
+
+     @media screen and (min-width: 450px) {
+         .global-template-mobile_lesson :is(h1, h2, h3, h4, h5, h6, figure, section) {
+             clear: inline-start
+         }
+     }
+
+     @media screen and (min-width: 450px) {
+         .global-template-mobile_lesson section {
+             overflow: auto
+         }
+     }
+
+     .global-template-mobile_lesson h3 {
+         line-height: var(--lineHeightTight)
+     }
+
+     .global-template-mobile_lesson :is(.collection-title, .scripture-title, .section-title, .series-title, .title-number, .song-number)+ :is(h1, h2, h3, h4, h5, h6) {
+         margin-top: var(--spacing4)
+     }
+
+     .global-template-mobile_lesson .body-block>section section>header {
+         margin-bottom: var(--spacing8)
+     }
+
+     .global-template-mobile_lesson sup {
+         font-size: var(--fontSize13);
+         vertical-align: super;
+         line-height: 0;
+         padding-inline-start: calc(var(--spacing4) / 2)
+     }
+
+     .global-template-mobile_lesson :is(h1, .subtitle)+ :is(.bio, .event, .epigraph, .kicker, .summary, .intro, .study-summary, .study-intro, video) {
+         margin-top: var(--spacing32)
+     }
+
+     .global-template-mobile_lesson :is(.summary, .intro, .study-summary, .study-intro, .kicker + .kicker, .epigraph + .epigraph, .kicker + .epigraph, .epigraph + .kicker) {
+         font-family: var(--serif);
+         font-style: italic
+     }
+
+     .global-template-mobile_lesson[data-uri*="come-follow-me-for-individuals-and-families"] .body-block :is(header > .icon:first-child, header > a:first-child > .icon, header > div:first-child > .icon) {
+         margin: 0 auto;
+         padding: 0 0 var(--spacing8)
+     }
+
+     .global-template-mobile_lesson .icon {
+         max-width: 100px
+     }
+
+     .global-template-mobile_lesson :is(header p.subtitle, aside header p.subtitle, figure header p.subtitle) {
+         font-family: var(--sans);
+         font-size: var(--fontSize13);
+         line-height: var(--lineHeightTight);
+         margin-bottom: 0
+     }
+
+     .global-template-mobile_lesson h1+.subtitle {
+         margin-top: var(--spacing8)
+     }
+
+     .global-template-mobile_lesson .image-cropper {
+         height: 60px;
+         width: 60px
+     }
+ }
