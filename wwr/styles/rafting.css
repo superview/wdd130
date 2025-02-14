@@ -213,10 +213,20 @@ input[type=submit]:hover {
   justify-content: center;
 }
 
+.map {
+  display: flex 1 1 auto;
+}
+.map iframe {
+  width: 400px;
+  height: 300px;
+  border: 0;
+}
+
 .form label {
   align-items: center;
   justify-content: center;
 }
+
 .contact figure {
   /* border: thin #c0c0c0 solid; */
   display: flex;
