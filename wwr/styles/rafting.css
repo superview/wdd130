@@ -149,9 +149,59 @@ p {
   padding: 0;
 }
 
-input[type=text], select, textarea {
+.input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input[type=text], select, textarea {
   width: 80%;
   max-width: 500px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+
+  width: 80%;
+  background-color: antiquewhite;
+}
+
+.bio1 {
+  display: flex;
+  justify-content: left;
+  background-color: antiquewhite;
+}
+.bio div {
+  background-color: antiquewhite;
+}
+
+.bio figure {
+  justify-content: center;
+}
+.radio {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  background-color: antiquewhite;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.radio label {
+  padding: auto;
+  justify-self: unset;
+  align-items: center;
+  justify-items: center;
 }
 .contact form {
   display: flex;
@@ -160,8 +210,13 @@ input[type=text], select, textarea {
   max-width: 50%;
   align-items: flex-start;
   padding: 2rem;
+  justify-content: center;
 }
 
+.form label {
+  align-items: center;
+  justify-content: center;
+}
 .contact figure {
   /* border: thin #c0c0c0 solid; */
   display: flex;
