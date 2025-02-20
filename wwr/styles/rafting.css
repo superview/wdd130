@@ -19,7 +19,7 @@
 }
 
 .hero img {
-  max-width: 100px;
+  max-width: 1280px;
 }
 
 h1,
@@ -39,6 +39,11 @@ header {
   padding: 2px;
   max-width: var(--max-overall-width);
   background-color: var(--secondary-color);
+}
+
+header img {
+  height: 90px;
+  width: auto;
 }
 
 div {
@@ -90,6 +95,66 @@ div {
 
 p {
   font-family: "Delius", serif;
+}
+
+.large_full_image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.large_full_image img {
+  width: 100%;
+  display: block;
+}
+
+.full_width_image {
+  width: 100%;
+  display: block;
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  background-color: rgba(117, 57, 113, 0.6);
+  border-radius: 1rem;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.bottom_banner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(88,22,99, 0.7);
+  /* background-color: rgba(var(--accent2-color), 0.9); */
+
+  border-top: 1px solid #ffcc00;
+  color: white;
+  font-size: larger;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2; 
+}
+
+.bottom_banner p {
+  margin: 0;
+  color: white;
+  font-size: larger;
+  text-align: center;
+  padding: 10px;
+}
+
+.img_large {
+  height: auto;
+  width: 250px;
+  float: center;
 }
 
 .img_medium {
